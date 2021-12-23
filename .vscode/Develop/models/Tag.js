@@ -13,7 +13,7 @@ Tag.init(
       autoIncrement: true// define columns
     },
     tag_name: {
-      name: DataTypes.STRING
+    type: DataTypes.STRING
 
     },
   },
