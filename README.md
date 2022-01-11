@@ -29,6 +29,6 @@ You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Seq
 Use the `schema.sql` file in the `db` folder to create your database using MySQL shell commands. Use environment variables to store sensitive data, like your MySQL username, password, and database name.
 
 ## Useage
-The site repository is at https://github.com/sandy-06/e-commerce
+The site repository is at https://github.com/sandy-06/ecommerce
 The video link of it being demo'd is
 ![alt text]()
