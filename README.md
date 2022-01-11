@@ -39,7 +39,7 @@ Use the `schema.sql` file in the `db` folder to create your database using MySQL
 The site repository is at https://github.com/sandy-06/ecommerce
 The video link of it being demo'd is
 ![alt text](assets/images/insomnia1.png)
-
+https://watch.screencastify.com/v/15H7uAQTbfsUtr5zhXgK
 ## Credits
 The project had starter code from the module. The rest of the code was done by Sandra Sanders.
 
