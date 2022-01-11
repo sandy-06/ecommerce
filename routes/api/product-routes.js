@@ -111,6 +111,7 @@ router.put('/:id', (req, res) => {
     })
     .then((productTags) => {
       // get list of current tag_ids
+
       const productTagIds = productTags.map(({ tag_id }) => tag_id);
       // create filtered list of new tag_ids
       const newProductTags = req.body.tagIds
@@ -140,7 +141,17 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  // delete one product by its `id` value
+  // delete one product by its `id` value\
+  Product.destroy({where: { id:req.params.id}})
+  .then(data =>{
+    console.log(data);
+    res.json(data);
+    
+  }).catch(err=>{
+    console.log(err)
+    res.status(400).json(err);
+  })
+
 });
 
 module.exports = router;
