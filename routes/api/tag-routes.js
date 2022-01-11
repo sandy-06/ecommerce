@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Tag, Product, ProductTag } = require('../../models');
+const { Tag, Product, ProductTag, Category} = require('../../models');
 
 // The `/api/tags` endpoint
 
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
         model:Product,
         through: ProductTag
       },
-      Category
+     
     ]
     
   }).then(products => (res.json(products)))
@@ -40,7 +40,7 @@ router.get('/:id', (req, res) => {
         model:Product,
         through: ProductTag
       },
-      Category
+    
        
     ]
   })
@@ -71,7 +71,13 @@ router.put('/:id', (req, res) => {
     where: {
       id: req.params.id,
     },
-  })
+  }).then(data =>{
+  res.json(data);
+  
+}).catch(err=>{
+  console.log(err)
+  res.status(400).json(err);
+})
 });
 
 router.delete('/:id', (req, res) => {
