@@ -17,11 +17,18 @@ WHEN I test API POST, PUT, and DELEsTE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
 ## Table of Contents
+
 *[Description](#description)
+
 *[Installation](#installation)
+
 *[Useage](#useage)
+
 *[Credits](#credits)
+
 *[license](#license)
+
+*[Contact](#contact)
 
 ## Installation
 You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables to store sensitive data, like your MySQL username, password, and database name.
@@ -31,4 +38,17 @@ Use the `schema.sql` file in the `db` folder to create your database using MySQL
 ## Useage
 The site repository is at https://github.com/sandy-06/ecommerce
 The video link of it being demo'd is
-![alt text]()
+![alt text](assets/images/insomnia1.png)
+
+## Credits
+The project had starter code from the module. The rest of the code was done by Sandra Sanders.
+
+## License
+Apache
+
+## Contact
+
+For more contact Sandra Sanders
+sandy-06@github.com
+https://www.linkedin.com/in/sandy-sanders-22190210
+
