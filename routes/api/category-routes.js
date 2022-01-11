@@ -50,7 +50,7 @@ router.post('/', (req, res) => {
   // create a new category\
   Category.create(req.body)
   
-    res.status(200).json(product);
+    res.status(200).json('category_name');
   });
   
 

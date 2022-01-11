@@ -61,7 +61,7 @@ router.post('/', (req, res) => {
   // create a new tag
   Tag.create(req.body)
    
-      res.status(200).json(product);
+      res.status(200).json("tag_name");
     });
     
 
